@@ -18,7 +18,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "gcloud:build": "gcloud builds submit --config cloudbuild.yml ",
+    "gcloud:build": "gcloud builds submit --tag gcr.io/blogofrik/strapi-image-local",
     "gcloud:deploy": "gcloud run deploy strapi --image gcr.io/blogofrik/strapi-image-local"
   },
   "devDependencies": {},
