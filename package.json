@@ -1,0 +1,37 @@
+{
+  "name": "blogofrik-strapi-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "docker:build": "docker build --platform linux/amd64 --build-arg NODE_ENV=production -t strapi -f Dockerfile.prod .",
+    "docker:tag": "docker tag strapi gcr.io/blogofrik/strapi-image-local",
+    "docker:push": "docker push gcr.io/blogofrik/strapi-image-local",
+    "docker:release": "yarn docker:build && yarn docker:tag && yarn docker:push",
+    "gcloud:build": "gcloud builds submit --tag gcr.io/blogofrik/strapi-image-local",
+    "gcloud:deploy": "gcloud run deploy strapi --image gcr.io/blogofrik/strapi-image-local"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.11.4",
+    "@strapi/plugin-users-permissions": "4.11.4",
+    "@strapi/strapi": "4.11.4",
+    "better-sqlite3": "8.0.1",
+    "mysql": "^2.18.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "6a0914e8-4a3a-4ca5-b80e-6fdd4f02d9ed"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

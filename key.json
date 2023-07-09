@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "blogofrik",
+  "private_key_id": "4cd092eb0b0dc861082883dbea9388d9fb265ada",
+  "private_key": "-----BEGIN PRIVATE KEY-----MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDY8OLPSKPn+XkqnOdFc7tUAy3FfoxoEBMXoa5GoPIqdezbjsXcTfNDA62GdmvwzTOgAqcobbFgsgjp5tZFLHaW86ATKcT1hCi7PFvVuP143wt8PY4NFQDe6m1Va931S6NHrOALc7M+3XyotndnFUv5Gc+gE4K7eYIj2dsmHWMfvcd6QtgOpKjpG1zgnVSMXVNVf46X2bCKJY2bF65U93ryN+QNfOEkOZWNPxtJ/rb6Z35+8L+DfScxJ3KP18Zn6l1dvLopiyPnNg1pKnDdfS6j4mABYQzRdcJQHYKHaBQ5sK5fRGq9sFF5Q06umvPxNRDUnYvuays9XtvTUlwL1703AgMBAAECggEAN6k+mG6L12YT55IQaKp0Au853DVG8yBEtch+/ZIn8CsHlaHBNHAvnR8hc6GIumT7/O8RUncqjqO/U7wtd9wbpUlm5ePOrCu3g6rN6T0ok82ulbb5bnPYIFnHqaYeceRxRV+esHGEKPoNFQCUDDfToVs1AV5gKZfYgzhPWS0rFKZUiSR2FWhcganfrVZIuagfBWt6qQqyuXqYb1nx48YdTqhUQlbuU58Pg9kHPiu7gLhq3WzV1eoghNA5yIgx+M2RuzjS4jPGIqKRQB3mCYBCsRFGyPi8o7h4VLa/5Uhz+XTooxU0Ke+X03q80lUBzRpNZo+XJbVk+NwdaKCgUjOW4QKBgQD7wiYP/w/smOZFiYYkiQ9ovdUR3r1/Pig3ceBxAGGhmkN/fMMWGrx7/e8/vqbX8FkEtLJsbP8rVnCHuglr8HUituLqgTqJ165jFOwuh4zGyFbB7z6KuuY2p2s8VWOSiuAT88aNGC5TMik8La06rtc9O39JxQ2ds7Zmp9I8cYsv5wKBgQDcmJE68mtXa49eBjvcyA2NVYnQb0fziyaz7fTL0iBkBuuQWyXYs0Q0LHNze1e5ViZapKDWnbtgrAJ3ql7yskrZ5zoPES+6Gh2RSiHBqtdzJjEMlOupAp1t9ALBwcb6/jpGaUV0jLX1R2m46AgTQ8vJFH9pEiPLxYjgw/FhGeWeMQKBgQCHxdzhI51i69LEDbbaXVCCHF6clJN92/e0byWry5jbnmZoitBrS1/7PqeYqSkxq91WPF09PEshBC0MBbivDa8eWaNm9OqtDDRwGwiEz3WMft7LGEuSZdliAEhE8YgRr/PIzt91mGTjWVoDql6SF1jdHQk4r5z4P8NO+ZLYJiP6YQKBgQCwP825dTrCTBPuIbjue4AobjGAMYkhUwqHNBYkSyzJ/qVzXv/sFb7mmKVdnSzHzcczINnI35l4cbY++gaGjmEznIVMyISDgp4hGUPDQsaFH/yMeueWz5oM4araOALNQxY4b5+osUwoPvh/XhQloENP02rA/ldPVfI48xUGafSF4QKBgQCwfN1VZGZXv3LoVNr26nTt8Biai3JpjltUZmAejEm4URAWeKukc8xXgrOZGnjENXmtod+w46d9xuN/jNJPzBlYrk0k5Szb8HV1DtmX7OhGpdJSwAqBT5aN1GLcaJJ1ShylDSq9Midzfb1ODbIcCh7R/5G53+Eud8XSwPBAMGBy1g==-----END PRIVATE KEY-----",
+  "client_email": "quickstart-service-account@blogofrik.iam.gserviceaccount.com",
+  "client_id": "107071911344814713055",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/quickstart-service-account%40blogofrik.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
