@@ -9,7 +9,7 @@
     "@strapi/plugin-i18n": "4.11.4",
     "mysql": "2.18.1"
   },
-  "name": "my-project",
+  "name": "blogorikstrapi",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {},
   "author": {
-    "name": "A Strapi developer"
+    "name": "Rikesh Shrestha"
   },
   "strapi": {
     "uuid": "dac26728-4d8d-4ac2-9721-58bbd3b312f9",
