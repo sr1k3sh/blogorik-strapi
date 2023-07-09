@@ -1,13 +1,15 @@
 {
   "dependencies": {
+    "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.10.5",
     "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.11.4",
+    "@strapi/plugin-users-permissions": "4.11.4",
+    "@strapi/strapi": "4.11.4",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
-    "@strapi/strapi": "4.11.4",
-    "@strapi/plugin-users-permissions": "4.11.4",
-    "@strapi/plugin-i18n": "4.11.4",
-    "mysql": "2.18.1"
+    "mysql": "2.18.1",
+    "sharp": "^0.32.1"
   },
   "name": "blogorikstrapi",
   "private": true,
@@ -21,7 +23,6 @@
     "gcloud:build": "gcloud builds submit --tag gcr.io/blogofrik/strapi-image-local",
     "gcloud:deploy": "gcloud run deploy strapi --image gcr.io/blogofrik/strapi-image-local"
   },
-  "devDependencies": {},
   "author": {
     "name": "Rikesh Shrestha"
   },
