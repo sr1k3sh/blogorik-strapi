@@ -5,10 +5,10 @@ services:
     build: .
     image: strapi:latest
     restart: unless-stopped
-    env_file: .env
+    env_file: .env.production
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
-      DATABASE_HOST:   ${DATABASE_HOST}
+      DATABASE_HOST: ${DATABASE_HOST}
       # DATABASE_HOST: /cloudsql/blogofrik:us-central1:strapi-instance
       DATABASE_NAME: ${DATABASE_NAME}
       DATABASE_USERNAME: ${DATABASE_USERNAME}
@@ -16,8 +16,7 @@ services:
       JWT_SECRET: ${JWT_SECRET}
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-      APP_KEYS: ${APP_KEYS}
-      NODE_ENV: ${NODE_ENV}
+      # NODE_ENV: ${NODE_ENV}
     volumes:
       - ./config:/opt/app/config
       - ./src:/opt/app/src
@@ -27,7 +26,7 @@ services:
       - ./.env:/opt/app/.env
       - ./public/uploads:/opt/app/public/uploads
     ports:
-      - '8080:8080'
+      - '1337:1337'
     networks:
       - strapi
     # depends_on:

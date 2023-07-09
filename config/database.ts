@@ -7,7 +7,7 @@ export default ({ env }) => {
     mysql: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        // socketPath: env('DATABASE_HOST', '/cloudsql/blogofrik:us-central1:strapi-instance'),
+        // host: env('DATABASE_HOST', '/cloudsql/blogofrik:us-central1:strapi-instance'),
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'test'),
         user: env('DATABASE_USERNAME', 'root'),
@@ -23,9 +23,13 @@ export default ({ env }) => {
             true
           ),
         },
-        ... env('NODE_ENV') === 'development' ?
-        {host: env('DATABASE_HOST', '/cloudsql/blogofrik:us-central1:strapi-instance')} :
-        {socketPath: env('DATABASE_HOST', '/cloudsql/blogofrik:us-central1:strapi-instance')}
+        ...env('NODE_ENV','production') === 'production'?
+        {
+          socketPath: env('DATABASE_HOST', '/cloudsql/blogofrik:us-central1:strapi-instance'),
+        } :
+        {
+          host: env('DATABASE_HOST'),
+        },
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
