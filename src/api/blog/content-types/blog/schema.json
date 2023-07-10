@@ -37,7 +37,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles"
+      "inversedBy": "blogs"
     },
     "category": {
       "type": "relation",
