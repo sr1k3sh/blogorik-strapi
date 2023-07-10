@@ -43,7 +43,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles"
+      "inversedBy": "blogs"
     },
     "blocks": {
       "type": "dynamiczone",
