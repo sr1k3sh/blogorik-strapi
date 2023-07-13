@@ -4,6 +4,7 @@
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.11.4",
     "@strapi/plugin-users-permissions": "4.11.4",
+    "@strapi/provider-upload-cloudinary": "^4.11.5",
     "@strapi/strapi": "4.11.4",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
