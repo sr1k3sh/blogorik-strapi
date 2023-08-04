@@ -1,15 +1,16 @@
 {
   "dependencies": {
-    "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.10.5",
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.11.4",
     "@strapi/plugin-users-permissions": "4.11.4",
     "@strapi/provider-upload-cloudinary": "^4.11.5",
     "@strapi/strapi": "4.11.4",
+    "better-sqlite3": "^8.4.0",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "mysql": "2.18.1",
+    "pg": "^8.11.1",
     "sharp": "^0.32.1"
   },
   "name": "blogorikstrapi",
@@ -22,6 +23,10 @@
     "build": "strapi build",
     "strapi": "strapi",
     "gcloud:build": "gcloud builds submit --tag gcr.io/blogofrik/strapi-image-local",
+    "docker:build": "docker build --progress=plain --no-cache --platform linux/amd64 -t strapi-image-local . ",
+    "docker:tag": "docker tag strapi-image-local gcr.io/blogofrik/strapi-image-local",
+    "docker:push": "docker push gcr.io/blogofrik/strapi-image-local",
+    "docker:release": "yarn docker:build && yarn docker:tag && yarn docker:push",
     "gcloud:deploy": "gcloud run deploy strapi --image gcr.io/blogofrik/strapi-image-local"
   },
   "author": {
