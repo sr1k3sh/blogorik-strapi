@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sklinet/strapi-plugin-video-field": "^1.0.5",
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.11.4",
     "@strapi/plugin-users-permissions": "4.11.4",
@@ -11,7 +12,8 @@
     "mime-types": "^2.1.27",
     "mysql": "2.18.1",
     "pg": "^8.11.1",
-    "sharp": "^0.32.1"
+    "sharp": "^0.32.1",
+    "strapi-plugin-oembed": "^1.1.0"
   },
   "name": "blogorikstrapi",
   "private": true,

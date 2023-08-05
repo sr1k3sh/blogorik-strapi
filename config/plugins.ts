@@ -31,5 +31,8 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: './src/plugins/strapi-cloudinary'
   },
+  "video-field":{
+    enabled:true
+  },
   //...
 })
