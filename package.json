@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
     "@sklinet/strapi-plugin-video-field": "^1.0.5",
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.11.4",
