@@ -1,0 +1,8 @@
+{
+  "method": "GET",
+  "path": "/connect/google",
+  "handler": "connect.google",
+  "config": {
+    "policies": []
+  }
+}
